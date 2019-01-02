@@ -1,0 +1,335 @@
+<html lang="zh-TW">
+<head>
+	<title>MCU ‧ 漫威電影宇宙</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<style>
+    .w3-teal
+    {
+      background-color: #333333!important;
+      height: 55px;
+    }
+    .w3-bar-block .w3-bar-item
+    {
+      padding: 9.8px 16px;
+    }
+    .w3-sidebar
+    {
+      background-color: #edededbf;
+
+    }
+    .hr1
+    {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    }
+    button
+    {
+      outline:none;
+    }
+    .button0
+    {
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .button1
+    {
+      background-color: #ffffff00;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button1:hover
+    {
+      background-color: #b22421a8;
+      color: white;
+    }
+    .button2
+    {
+      background-color: #ffffff00;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button2:hover
+    {
+      background-color: #44761da8;
+      color: white;
+    }
+    .button3
+    {
+      background-color: #ffffff00;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button3:hover
+    {
+      background-color: #b22421a8;
+      color: white;
+    }
+    .button4
+    {
+      background-color: #ffffff00;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button4:hover
+    {
+      background-color: #1b4268a8;
+      color: white;
+    }
+    .button5
+    {
+      background-color: #ffffff00;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button5:hover
+    {
+      background-color: #3e5061a8;
+      color: white;
+    }
+    .button6
+    {
+      background-color: #ffffff00;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button6:hover
+    {
+      background-color: #3d4209a8;
+      color: white;
+    }
+    body
+    {
+      font-family: Comic Sans MS,Microsoft YaHei!important;
+      background-image: url(desk.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+	</style>
+</head>
+<body>
+	<div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left"style="display: none"id="leftMenu">
+		<button onclick="closeLeftMenu()"class="w3-bar-item w3-large">
+			<img src="right.png"width="30">
+      <img src="logo.png" width="130">
+		</button>
+    <br>
+    <button onclick="display1();"class="w3-bar-item w3-button"style="font-size: 20px;text-decoration:none;"><b> ◆　復仇者集結</b></button>
+    <button onclick="display2();"class="w3-bar-item w3-button"style="font-size: 20px;text-decoration:none;"><b> ◆　新世界開啟</b></button>
+    <button onclick="display3();"class="w3-bar-item w3-button"style="font-size: 20px;text-decoration:none;"><b> ◆　未知英雄崛起</b></button>
+    <button onclick="display4();"class="w3-bar-item w3-button"style="font-size: 20px;text-decoration:none;"><b> ◆　未來 . . .</b></button>
+    <img src="sit.png"style="position: absolute;bottom: 5px"width="100">
+	</div>
+
+  <div class="w3-sidebar w3-bar-block w3-border-left w3-animate-right"style="display: none;right:0;"id="rightMenu">
+    <button onclick="closeRightMenu()"class="w3-bar-item w3-large">
+      <p"><span class="glyphicon glyphicon-indent-left"style="font-size: 26px"></span></p>
+      <img src="sing.png"style="position: absolute;bottom: 5px"width="100">
+    </button>
+    <br>
+  </div>
+
+	<div class="w3-teal">
+		<button class="w3-button w3-teal w3-xlarge w3-left"onclick="openLeftMenu()">
+			<img src="left.png"width="30">
+			<img src="logo.png" width="130">
+		</button>
+    <button class="w3-button w3-teal w3-xlarge w3-right"onclick="openRightMenu()">
+      <p style="font-size: 25px"><span class="glyphicon glyphicon-leaf"style="font-size: 23px"></span> FongJing.　</p>
+    </button>
+	</div>
+
+  <div id=" ◆　復仇者集結" style="display:none;margin:15 230px;font-size: 25px">
+    <button onclick="display5()" class="button button1">鋼鐵人</button>
+    <button onclick="display6()" class="button button2">無敵浩克</button>
+    <button onclick="display7()" class="button button3">鋼鐵人2</button>
+    <button onclick="display8()" class="button button4">雷神索爾</button>
+    <button onclick="display9()" class="button button5">美國隊長</button>
+    <button onclick="display10()" class="button button6">復仇者聯盟</button>
+    <hr class="hr1">
+    <div id="鋼鐵人"style="display: none;">1</div>
+    <div id="無敵浩克"style="display: none;">2</div>
+    <div id="鋼鐵人2"style="display: none;">3</div>
+    <div id="雷神索爾"style="display: none;">4</div>
+    <div id="美國隊長"style="display: none;">5</div>
+    <div id="復仇者聯盟"style="display: none;">6</div>
+  </div>
+
+
+  <div id=" ◆　新世界開啟" style="display:none">Page 2</div>
+  <div id=" ◆　未知英雄崛起" style="display:none">Page 3</div>
+  <div id=" ◆　未來 . . ." style="display:none">Page 4</div>
+
+  
+
+  
+	<script>
+		function openLeftMenu()
+		{
+			document.getElementById("leftMenu").style.display="block";
+		}
+		function closeLeftMenu()
+		{
+			document.getElementById("leftMenu").style.display="none";
+		}
+    function openRightMenu()
+    {
+      document.getElementById("rightMenu").style.display="block";
+    }
+    function closeRightMenu()
+    {
+      document.getElementById("rightMenu").style.display="none";
+    }
+    function display1()
+    {
+      var x=document.getElementById(" ◆　復仇者集結");
+      var y=document.getElementById(" ◆　新世界開啟");
+      var z=document.getElementById(" ◆　未知英雄崛起");
+      var w=document.getElementById(" ◆　未來 . . .");
+      x.style.display="block";
+      y.style.display="none";
+      z.style.display="none";
+      w.style.display="none";
+    }
+    function display2()
+    {
+      var x=document.getElementById(" ◆　復仇者集結");
+      var y=document.getElementById(" ◆　新世界開啟");
+      var z=document.getElementById(" ◆　未知英雄崛起");
+      var w=document.getElementById(" ◆　未來 . . .");
+      x.style.display="none";
+      y.style.display="block";
+      z.style.display="none";
+      w.style.display="none";
+    }
+    function display3()
+    {
+      var x=document.getElementById(" ◆　復仇者集結");
+      var y=document.getElementById(" ◆　新世界開啟");
+      var z=document.getElementById(" ◆　未知英雄崛起");
+      var w=document.getElementById(" ◆　未來 . . .");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="block";
+      w.style.display="none";
+    }
+    function display4()
+    {
+      var x=document.getElementById(" ◆　復仇者集結");
+      var y=document.getElementById(" ◆　新世界開啟");
+      var z=document.getElementById(" ◆　未知英雄崛起");
+      var w=document.getElementById(" ◆　未來 . . .");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      w.style.display="block";
+    }
+    function display5()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="block";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display6()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="none";
+      y.style.display="block";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display7()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="block";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display8()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="block";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display9()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="block";
+      r.style.display="none";
+    }
+    function display10()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="block";
+    }
+	</script>
+</body>
+</html>
+
