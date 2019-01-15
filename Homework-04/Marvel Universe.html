@@ -1,0 +1,1372 @@
+<html lang="zh-TW">
+<head>
+	<title>MCU ‧ 漫威電影宇宙</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <style>
+    .w3-teal
+    {
+      background-color: #333333!important;
+      height: 55px;
+    }
+    .w3-bar-block .w3-bar-item
+    {
+      padding: 9.8px 16px;
+    }
+    .w3-sidebar
+    {
+      background-color: #edededbf;
+      width: 250px;
+    }
+    .hr1
+    {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    }
+    button
+    {
+      outline:none;
+    }
+    .button0
+    {
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .button1
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button1:hover
+    {
+      background-color: #b22421a8;
+      color: white;
+    }
+    .button2
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button2:hover
+    {
+      background-color: #44761da8;
+      color: white;
+    }
+    .button3
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button3:hover
+    {
+      background-color: #b22421a8;
+      color: white;
+    }
+    .button4
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button4:hover
+    {
+      background-color: #1b4268a8;
+      color: white;
+    }
+    .button5
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button5:hover
+    {
+      background-color: #505050a8;
+      color: white;
+    }
+    .button6
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button6:hover
+    {
+      background-color: #9d7d0aa8;
+      color: white;
+    }
+    .button7
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button7:hover
+    {
+      background-color: #b22421a8;
+      color: white;
+    }
+    .button8
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button8:hover
+    {
+      background-color: #1b4268a8;
+      color: white;
+    }
+    .button9
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button9:hover
+    {
+      background-color: #505050a8;
+      color: white;
+    }
+    .button10
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button10:hover
+    {
+      background-color: #431b68a8;
+      color: white;
+    }
+    .button11
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button11:hover
+    {
+      background-color: #9d7d0aa8;
+      color: white;
+    }
+    .button12
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button12:hover
+    {
+      background-color: #3c07018c;
+      color: white;
+    }
+    .button13
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button13:hover
+    {
+      background-color: #505050a8;
+      color: white;
+    }
+    .button14
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button14:hover
+    {
+      background-color: #44761da8;
+      color: white;
+    }
+    .button15
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button15:hover
+    {
+      background-color: #431b68a8;
+      color: white;
+    }
+    .button16
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button16:hover
+    {
+      background-color: #1b4268a8;
+      color: white;
+    }
+    .button17
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button17:hover
+    {
+      background-color: #505050a8;
+      color: white;
+    }
+    .button18
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button18:hover
+    {
+      background-color: #9d7d0aa8;
+      color: white;
+    }
+    .button19
+    {
+      background-color: #ffffff8a;
+      color: black;
+      border: 2px solid #00000000;
+      border-radius: 15px;
+    }
+    .button19:hover
+    {
+      background-color: #3c07018c;
+      color: white;
+    }
+    .glyphicon
+    {
+      top: 3px;
+    }
+    body
+    {
+      font-family: Comic Sans MS,Microsoft YaHei!important;
+      background-image: url(./img/desk.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .div1
+    {
+      width: 415px;
+      height: 580px;
+      float: left;
+    }
+    .div2
+    {
+      width: 68%;
+      float: left;
+      word-break: break-all;
+    }
+    .div3
+    {
+      clear:both;
+    }
+    .div4
+    {
+      background-color: white;
+      width: 810px;
+      height: 570px;
+      border-radius: 30px;
+    }
+    .div5
+    {
+      float: right;
+      width: 150px;
+      height: 30px;
+    }
+	</style>
+  <link rel="stylesheet" href="./colorbox/colorbox/colorbox.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="./colorbox/jquery.colorbox.js"></script>
+  <script>
+      $(document).ready(function()
+      {
+        $(".group1").colorbox({rel:'group1'});
+      });
+    </script>
+</head>
+<body>
+	<div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left"style="display: none"id="leftMenu">
+		<button onclick="closeLeftMenu()"class="w3-bar-item w3-large">
+			<span class="glyphicon glyphicon-indent-right"style="font-size: 22px"></span>
+      <img src="./img/logo.png" width="150">
+		</button>
+    <br>
+    <button onclick="display1();"class="w3-bar-item w3-button"style="font-size: 20px;text-decoration:none;"><b> ◆　復仇者集結</b></button>
+    <button onclick="display2();"class="w3-bar-item w3-button"style="font-size: 20px;text-decoration:none;"><b> ◆　新世界開啟</b></button>
+    <button onclick="display3();"class="w3-bar-item w3-button"style="font-size: 20px;text-decoration:none;"><b> ◆　未知英雄崛起</b></button>
+    <button onclick="display4();"class="w3-bar-item w3-button"style="font-size: 20px;text-decoration:none;"><b> ◆　未來 . . .</b></button>
+    <img src="./img/sit.png"style="position: absolute;bottom: 5px"width="100">
+	</div>
+
+  <div class="w3-sidebar w3-bar-block w3-border-left w3-animate-right"style="display: none;right:0;"id="rightMenu">
+    <button onclick="closeRightMenu()"class="w3-bar-item w3-large">
+      <p"><span class="glyphicon glyphicon-indent-left"style="font-size: 26px"></span></p>
+    </button>
+    <br>
+    <center><img src="./img/I.png"style=""width="170"></center>
+    <center><p style="font-size: 20px"><b>楓景</b></p></center>
+    <hr class="hr1">
+    <p style="font-size: 20px"><b>　◆ 本名 ：周富景</b></p>
+    <p style="font-size: 20px"><b>　◆ 系級 ：應數三</b></p>
+    <br>
+    <p style="font-size: 20px"><b>　<img src="./img/fb.png"> ：<a href="https://www.facebook.com/fongjing0420"style="text-decoration:none;"target="_blank">楓景</a></b></p>
+    <p style="font-size: 20px"><b>　<img src="./img/line.png"> ：fujing0420</b></p>
+    <p style="font-size: 20px"><b>　<img src="./img/ig.png"> ：fongjing0420</b></p>
+    <img src="./img/sing.png"style="position: absolute;bottom: 5px"width="100"> 
+  </div>
+
+	<div class="w3-teal">
+		<button class="w3-button w3-teal w3-xlarge w3-left"onclick="openLeftMenu()">
+      <span class="glyphicon glyphicon-align-justify"></span>
+		  <img id="logo"src="./img/logo.png" width="150">
+		</button>
+    <button class="w3-button w3-teal w3-xlarge w3-left"onclick="Homepage()">
+      <p><span class="glyphicon glyphicon-home"style="font-size: 22px"></span> 首頁 </p>
+    </button>
+    <button class="w3-button w3-teal w3-xlarge w3-right"onclick="openRightMenu()">
+      <p style="font-size: 25px"><span class="glyphicon glyphicon-leaf"style="font-size: 22px"></span> FongJing.　</p>
+    </button>
+	</div>
+
+  <div id=" 首頁 "style="display: block;">
+    <img src="./img/Stan Lee.png"style="position: absolute;bottom: 5px"width="400">
+    <center><br>
+      <img src="./img/time.png"width="1500"></center>
+  </div>
+
+  <div id=" ◆　復仇者集結" style="display:none;margin:20 270px;font-size: 25px">
+    <button onclick="display5()" class="button button1">鋼鐵人</button>
+    <button onclick="display6()" class="button button2">無敵浩克</button>
+    <button onclick="display7()" class="button button3">鋼鐵人2</button>
+    <button onclick="display8()" class="button button4">雷神索爾</button>
+    <button onclick="display9()" class="button button5">美國隊長</button>
+    <button onclick="display10()" class="button button6">復仇者聯盟</button>
+    <hr class="hr1">
+    <div id="鋼鐵人"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/ironman.png">
+          <img src="./img/ironman.png"width="400"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <div class="div5">
+          <p><a class="group1" href="./img/Robert.png">
+          <img src="./img/Robert.png"width="125"></a></p>
+        </div>
+        <p><b>片名 ：</b>《 鋼鐵人 / Iron Man 》</p>
+        <p><b>上映日期 ：</b>2008 年 04 月 30 日</p>
+        <p><b>領銜主演 ：</b>小勞勃 · 道尼</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述億萬富翁兼實業家<b>東尼 · 史塔克</b>被一個恐怖組織「 十環幫 」俘虜後為自己製作了一套盔甲，成功逃脫十環幫的他決定升級盔甲並穿上以追捕自己公司在私下透過不法手段出售予恐怖分子的武器，關閉公司的史塔克卻被「 奧比戴爾 」伏擊並成為「 鐵霸王 」，東尼成功擊敗奧比戴爾後，主動出面承認自己就是───<b>鋼鐵人</b>。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/8hYlB38asDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">鋼鐵人 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="無敵浩克"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/hulk.png">
+          <img src="./img/hulk.png"width="400"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <div class="div5">
+          <p><a class="group1" href="./img/Edward.png">
+          <img src="./img/Edward.png"width="125"></a></p>
+        </div>
+        <p><b>片名 ：</b>《 無敵浩克 / The Incredible Hulk 》</p>
+        <p><b>上映日期 ：</b>2008 年 06 月 08 日</p>
+        <p><b>領銜主演 ：</b>艾德華 · 諾頓　< 備註：後由馬克 · 盧法洛飾演 ></p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述科學家<b>布魯斯 · 班納</b>由於身體暴露在伽馬輻射下導致異變，使得當他情緒激動時會變成怪物綠巨人，班納為了逃避追捕及避免傷及無辜，決定獨自出走並遠離人群，甚至是他的最愛的人，選擇過著隱姓埋名的生活，為了防止軍方利用他的狀況作為武器，班納設法把自己治癒，軍方派出「 艾米爾 · 布朗恩斯基 」捕捉他，後來布朗恩斯基因為渴求浩克的力量，將自己變成「 惡煞 」，班納為了保護愛人，必須打敗惡煞，再次變身，成為怪物英雄───<b>浩克</b>。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/xbqNb2PFKKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">無敵浩克 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="鋼鐵人2"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/ironman2.png">
+          <img src="./img/ironman2.png"width="390"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <p><b>片名 ：</b>《 鋼鐵人 2 / Iron Man 2 》</p>
+        <p><b>上映日期 ：</b>2008 年 04 月 29 日</p>
+        <p><b>領銜主演 ：</b>小勞勃 · 道尼</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述<b>東尼 · 史塔克</b>向公眾揭示自己就是鋼鐵人後，美國聯邦政府要求他交出自己所擁有的技術，與此同時，東尼表面上看似光鮮亮麗，但其實他正苦於胸口的微型電弧反應爐所使用的金屬鈀，因為鈀逐漸混入血液中所造成的「 重金屬中毒 」正漸漸侵入自己的身體，活在自暴自棄生活的東尼使得他的好友「 羅德 」放棄幫助他，並拿走他的一件鋼鐵衣，後來成為了「 戰爭機器 」，與此同時一名來自俄羅斯的科學家「 伊凡 · 萬科 」合謀對付東尼，後來東尼在神盾局局長「 尼克 · 福瑞 」與黑寡婦「 娜塔莎 」的幫助下，發現了他的父親留給他一件遺物，這件遺物使得東尼發現新元素，於是他使用新能量來取代原來的鈀，並和羅德，也就是戰爭機器，一同擊敗「 鞭狂 」伊凡 · 萬科。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/BoohRoVA9WQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">鋼鐵人 2 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="雷神索爾"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/thor.png">
+        <img src="./img/thor.png"width="390"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <div class="div5">
+          <p><a class="group1" href="./img/Chris.png">
+          <img src="./img/Chris.png"width="125"></a></p>
+        </div>
+        <p><b>片名 ：</b>《 雷神索爾 / Thor 》</p>
+        <p><b>上映日期 ：</b>2011 年 04 月 29 日</p>
+        <p><b>領銜主演 ：</b>克里斯 · 漢斯沃</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述阿斯嘉皇太子<b>索爾</b>因重新燃起休眠的戰火而被放逐到地球，並因此被剝奪他的權力，然而這一切其實是做為索爾弟弟的邪神「 洛基 」，為奪取王位的寶座而設計的，但他也發現原來自己不是真正的阿斯嘉人，而是約頓海姆的寒冰巨人「 勞菲 」的兒子，但他為了證明自己比索爾更有資格，更有能力，於是想殺了索爾並向約頓海姆發動攻擊，此時索爾在地球上反省自所作所為，學習到成為王並非是要力量強大，而是保有一顆謙虛的心，並且肯為他人付出，索爾證明了自己於是重新獲得拿起槌子的資格，成為真正的英雄───<b>雷神索爾</b>。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/JOddp-nlNvQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">雷神索爾 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="美國隊長"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/captain.png">
+        <img src="./img/captain.png"width="390"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <div class="div5">
+          <p><a class="group1" href="./img/Evans.png">
+          <img src="./img/Evans.png"width="125"></a></p>
+        </div>
+        <p><b>片名 ：</b>《 美國隊長 / Captain America 》</p>
+        <p><b>上映日期 ：</b>2011 年 07 月 28 日</p>
+        <p><b>領銜主演 ：</b>克里斯 · 伊凡</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述1942年，也就是二戰期間，一心想為國家付出的<b>史蒂芬 · 羅傑斯</b>想要參軍，但卻因為體弱多病而多次被拒絕，但也因此意外被軍方科學「 亞拉伯罕·艾斯金 」發現其熱忱的心，於是讓它通過體檢，成功參軍的史蒂芬被招募進行秘密的軍事行動，他的身體被用作軍方的實驗而變成非常強壯的超級戰士，此時，納粹的科研部門九頭蛇的領袖「 紅骷髏 」發現「 宇宙魔方 」，想利用它的征服全世界，史蒂芬為了阻止「 紅骷髏 」，拯救世界，後來紅骷髏因為魔方，而被傳送到別的空間，史蒂芬將飛機迫降在冰川上，並因此沉睡 70 年，來到了現代美國，「 尼克 · 福瑞 」現身對史蒂芬聲言，世界仍需要───<b>美國隊長</b>。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/JerVrbLldXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">美國隊長 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="復仇者聯盟"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/avengers.png">
+        <img src="./img/avengers.png"width="380"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <p><b>片名 ：</b>《 復仇者聯盟 / The Avengers 》</p>
+        <p><b>上映日期 ：</b>2011 年 04 月 25 日</p>
+        <p><b>領銜主演 ：</b>
+          <p style="margin-left: 50px;">小勞勃 · 道尼 / 克里斯 · 漢斯沃 / 克里斯 · 伊凡 / 馬克 · 盧法洛 / 史嘉蕾 · 喬韓森 / 傑瑞米 · 雷納 / 湯姆 · 希德勒斯頓</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述神盾局局長「 尼克 · 福瑞 」，因為宇宙魔方的關係，意外將「 邪神 」洛基召喚到地球，而正好洛基也企圖征服地球，於是帶領齊塔瑞軍團，同時利用它的「 權杖 」與宇宙魔方，進攻地球，為了面對巨大威脅的外星勢力，於是尼克集合了「 鋼鐵人 」<b>東尼 · 史塔克</b>、「 綠巨人浩克 」<b>布魯斯 · 班納</b>、「 雷神 」<b>索爾</b>、「 美國隊長 」<b>史蒂芬
+         · 羅傑斯</b>、「 鷹眼 」<b>克林特 · 巴頓</b>及「 黑寡婦 」<b>娜塔莎 · 羅曼諾夫</b> 6 位超級英雄在一起，組成───<b>復仇者聯盟</b>。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/eOrNdBpGMv8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">復仇者聯盟 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div id=" ◆　新世界開啟" style="display:none;margin:20 270px;font-size: 25px">
+    <button onclick="display11()" class="button button7">鋼鐵人3</button>
+    <button onclick="display12()" class="button button8">雷神索爾2：黑暗世界</button>
+    <button onclick="display13()" class="button button9">美國隊長2：酷寒戰士</button>
+    <button onclick="display14()" class="button button10">星際異攻隊</button>
+    <button onclick="display15()" class="button button11">復仇者聯盟2：奧創紀元</button>
+    <button onclick="display16()" class="button button12">蟻人</button>
+    <hr class="hr1">
+    <div id="鋼鐵人3"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/ironman3.png">
+          <img src="./img/ironman3.png"width="380"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <p><b>片名 ：</b>《 鋼鐵人 3 / Iron Man 3 》</p>
+        <p><b>上映日期 ：</b>2013 年 04 月 25 日</p>
+        <p><b>領銜主演 ：</b>小勞勃 · 道尼</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述<b>東尼 · 史塔克</b>面對著一個強大的敵人「 滿大人 」，他摧毀了史塔克的豪宅。東尼·史塔克長期忍受著創傷後心理壓力症的折磨，以及他的盔甲和裝備嚴重受損，但他還是掙扎著把一系列神秘的爆炸案查得水落石出。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/Ke1Y3P9D0Bc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">鋼鐵人 3 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="雷神索爾2：黑暗世界"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/thor2.png">
+          <img src="./img/thor2.png"width="380"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <p><b>片名 ：</b>《 雷神索爾 2 ：黑暗世界 / Thor : The Dark World 》</p>
+        <p><b>上映日期 ：</b>2013 年 10 月 31 日</p>
+        <p><b>領銜主演 ：</b>克里斯 · 漢斯沃</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述「 雷神 」<b>索爾</b>跟天體物理學家<b>珍 · 佛斯特</b>因世界透過一系列隨機出現的通道而互相連接起來，二人得以重聚。他發現黑暗魔兵領袖「 魔雷基 」與他的黑暗精靈大軍在數千年後回來了，他們正尋找一種稱為乙太（ Aether ）的強大武器以摧毀全宇宙，索爾必須跟正在囚禁的弟弟洛基聯手一起阻止他們。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/npvJ9FTgZbM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">雷神索爾 2 ：黑暗世界 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="美國隊長2：酷寒戰士"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/captain2.png">
+          <img src="./img/captain2.png"width="380"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <p><b>片名 ：</b>《 美國隊長 2： 酷寒戰士 / Captain America : The Winter Soldier 》</p>
+        <p><b>上映日期 ：</b>2014 年 03 月 27 日</p>
+        <p><b>領銜主演 ：</b>小勞勃 · 道尼</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述現正跟神盾局工作的<b>史蒂芬 · 羅傑斯</b>，他跟「 黑寡婦 」娜塔莎·羅曼諾夫及「 獵鷹 」 山姆 · 威爾森合作，揭露一個深層的陰謀，當中涉及一名被稱為「 冬日戰士 」的神秘刺客。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/7SlILk2WMTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">美國隊長 2： 酷寒戰士 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="星際異攻隊"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/galaxy.png">
+        <img src="./img/galaxy.png"width="390"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <div class="div5">
+          <p><a class="group1" href="./img/pratt.png">
+          <img src="./img/pratt.png"width="125"></a></p>
+        </div>
+        <p><b>片名 ：</b>《 星際異攻隊 / Guardians of the Galaxy 》</p>
+        <p><b>上映日期 ：</b>2014 年 07 月 31 日</p>
+        <p><b>領銜主演 ：</b>克里斯 · 普瑞特</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述<b>星爵</b>率領包括蓋莫拉、火箭、魔鬼毀滅者德克斯及格魯特在內的一群銀河英雄共同對抗指控者「 羅南 」，以防止強大能力的寶物落入其魔掌中。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/d96cjJhvlMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">星際異攻隊 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="復仇者聯盟2：奧創紀元"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/avengers2.png">
+        <img src="./img/avengers2.png"width="390"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <p><b>片名 ：</b>《 復仇者聯盟2：奧創紀元 / Avengers: Age of Ultron 》</p>
+        <p><b>上映日期 ：</b>2015 年 04 月 22 日</p>
+        <p><b>領銜主演 ：</b>小勞勃 · 道尼 / 克里斯 · 漢斯沃 / 克里斯 · 伊凡 / 馬克 · 盧法洛 / 史嘉蕾 · 喬韓森 / 傑瑞米 · 雷納</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述「 鋼鐵人 」<b>東尼 · 史塔克</b>、「 綠巨人浩克 」<b>布魯斯 · 班納</b>、「 雷神 」<b>索爾</b>、「 美國隊長 」<b>史蒂芬
+         · 羅傑斯</b>、「 鷹眼 」<b>克林特 · 巴頓</b>及「 黑寡婦 」<b>娜塔莎 · 羅曼諾夫</b>再度聯手組成復仇者聯盟，來對付一個專注於滅絕人類的敵對機器人「 奧創 」，他們同時面對著能力強大的雙胞胎姊弟「 緋紅女巫 」與「 快銀 」，以及由奧創製造新的人形機器人「 幻視 」。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/tmeOjFno6Do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">復仇者聯盟2：奧創紀元 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="蟻人"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/ant.png">
+        <img src="./img/ant.png"width="380"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <div class="div5">
+          <p><a class="group1" href="./img/paul.png">
+          <img src="./img/paul.png"width="125"></a></p>
+        </div>
+        <p><b>片名 ：</b>《 蟻人 / Ant - Man 》</p>
+        <p><b>上映日期 ：</b>2015 年 07 月 16 日</p>
+        <p><b>領銜主演 ：</b>
+          <p style="margin-left: 50px;">保羅 · 路德</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述小偷<b>史考特 · 朗恩</b>在機緣巧合下必須協助他的導師「 漢克 · 皮姆 」博士保護其蟻人的秘密技術，這技術容許人類在身體縮小的情況下增加其力量，以應付各種各樣的威脅，二人肩負起捍衛地球的責任。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/pWdKf3MneyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">蟻人 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div id=" ◆　未知英雄崛起" style="display:none;margin:20 270px;font-size: 25px">
+    <button onclick="display17()" class="button button13">美國隊長3：英雄內戰</button>
+    <button onclick="display18()" class="button button14">奇異博士</button>
+    <button onclick="display19()" class="button button14">星際異攻隊2</button>
+    <button onclick="display20()" class="button button15">蜘蛛人：返校日</button>
+    <button onclick="display21()" class="button button16">雷神索爾3：諸神黃昏</button>
+    <button onclick="display22()" class="button button17">黑豹</button>
+    <button onclick="display23()" class="button button18">復仇者聯盟3：無限之戰</button>
+    <button onclick="display24()" class="button button19">蟻人與黃蜂女</button>
+    <hr class="hr1">
+    <div id="美國隊長3：英雄內戰"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/captain3.png">
+          <img src="./img/captain3.png"width="380"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <p><b>片名 ：</b>《 美國隊長 3：英雄內戰 / Captain America : Civil War 》</p>
+        <p><b>上映日期 ：</b>2016 年 04 月 27 日</p>
+        <p><b>領銜主演 ：</b>小勞勃 · 道尼 / 克里斯 · 伊凡</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述「 奧創紀元 」的事件後，促使各地政客通過法案，由政府規管超能人類的活動，並要求復仇者們對此負責；而復仇者聯盟對此的意見各異，於是他們分成兩個陣營，一支由「 美國隊長 」<b>史蒂芬 · 羅傑斯</b>帶領，另一支由「 鋼鐵人 」<b>東尼 · 史塔克</b>領頭，同時他們還要面對著一個新的敵人「 赫爾穆特 · 齊莫 」，他找復仇者尋求報復。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/dKrVegVI0Us" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">美國隊長 3：英雄內戰 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="奇異博士"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/doctor.png">
+          <img src="./img/doctor.png"width="380"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <div class="div5">
+          <p><a class="group1" href="./img/Benedict.png">
+          <img src="./img/Benedict.png"width="125"></a></p>
+        </div>
+        <p><b>片名 ：</b>《 奇異博士 / Doctor Strange 》</p>
+        <p><b>上映日期 ：</b>2016 年 10 月 25 日</p>
+        <p><b>領銜主演 ：</b>班奈狄克 · 康柏拜區</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述世界上頂級的神經外科醫生<b>史蒂芬 · 史傳奇</b>被捲入一場毀掉其職業生涯的車禍之中，他開始了一次治療之旅，並在途中遇到「 上古尊者 」，他教導史傳奇使用魔法並保衛地球免受神秘力量的威脅。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/HSzx-zryEgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">奇異博士 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="星際異攻隊2"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/galaxy2.png">
+          <img src="./img/galaxy2.png"width="380"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <p><b>片名 ：</b>《 星際異攻隊 2 / Guardians of the Galaxy Vol. 2 》</p>
+        <p><b>上映日期 ：</b>2017 年 04 月 26 日</p>
+        <p><b>領銜主演 ：</b>克里斯 · 普瑞特</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述「 星際異攻隊 」在整個宇宙中航行，並努力跟他們新發現的家人團聚，同時幫助<b>彼得 · 奎爾</b>了解更多他真正的家庭關係，並且面對新的敵人。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/wUn05hdkhjM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">星際異攻隊 2 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="蜘蛛人：返校日"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/spider.png">
+          <img src="./img/spider.png"width="380"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <div class="div5">
+          <p><a class="group1" href="./img/tom.png">
+          <img src="./img/tom.png"width="125"></a></p>
+        </div>
+        <p><b>片名 ：</b>《 蜘蛛人：返校日 / Spider-Man: Homecoming 》</p>
+        <p><b>上映日期 ：</b>2017 年 07 月 05 日</p>
+        <p><b>領銜主演 ：</b>湯姆 · 霍蘭德</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述<b>彼得 · 帕克</b>在托尼 · 史塔克的指導下，試圖平衡成為英雄蜘蛛人與他的高中生活，並要處理來自「 禿鷹 」的威脅。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/n9DwoQ7HWvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">蜘蛛人：返校日 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="雷神索爾3：諸神黃昏"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/thor3.png">
+        <img src="./img/thor3.png"width="390"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <p><b>片名 ：</b>《 雷神索爾 3：諸神黃昏 / Thor: Ragnarok 》</p>
+        <p><b>上映日期 ：</b>2017 年 10 月 24 日</p>
+        <p><b>領銜主演 ：</b>克里斯 · 漢斯沃</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述「 雷神 」<b>索爾</b>被困於沒有雷神之鎚的另一個世界，他必須在「 綠巨人 」浩克的鬥劍決鬥中倖存下來，並及時返回阿斯嘉特以阻止死神「 海拉 」和即將到來的「 諸神黃昏 」。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/v7MGUNV8MxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">雷神索爾 3：諸神黃昏 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="黑豹"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/black.png">
+        <img src="./img/black.png"width="390"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <div class="div5">
+          <p><a class="group1" href="./img/chadwick.png">
+          <img src="./img/chadwick.png"width="125"></a></p>
+        </div>
+        <p><b>片名 ：</b>《 黑豹 / Black Panther 》</p>
+        <p><b>上映日期 ：</b>2018 年 02 月 13 日</p>
+        <p><b>領銜主演 ：</b>查德威克 · 鮑斯曼</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述<b>帝查拉</b>回到家鄉瓦干達的家中，發現兼任保護者角色的國王受到一個全球性衝突後果長期對手的挑戰。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/xjDjIWPwcPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">黑豹 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="復仇者聯盟3：無限之戰"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/avengers3.png">
+        <img src="./img/avengers3.png"width="380"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <p><b>片名 ：</b>《 復仇者聯盟 3：無限之戰 / Avengers: Infinity War 》</p>
+        <p><b>上映日期 ：</b>2018 年 04 月 25 日</p>
+        <p><b>領銜主演 ：</b>
+          <p style="margin-left: 50px;">小勞勃 · 道尼 / 克里斯 · 漢斯沃 / 克里斯 · 伊凡 / 馬克 · 盧法洛 / 史嘉蕾 · 喬韓森 / 傑瑞米 · 雷納 / 班奈狄克 · 康柏拜區 / 唐 · 奇鐸 / 湯姆 · 霍蘭德 / 查德威克 · 鮑斯曼 / 保羅 · 貝特尼 / 伊莉莎白 · 歐森 / 安東尼 · 麥基 / 賽巴斯汀 · 斯坦 / 克里斯 · 普瑞特 /喬許 · 布洛林</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述復仇者聯盟獲得星際異攻隊的加入以阻止「 薩諾斯 」收集所有的無限寶石。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">復仇者聯盟 3：無限之戰 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+    <div id="蟻人與黃蜂女"style="display: none;">
+      <div class="div1">
+        <p><a class="group1" href="./img/ant2.png">
+        <img src="./img/ant2.png"width="380"></a></p>
+      </div>
+      <div class="div2">
+        <br>
+        <p><b>片名 ：</b>《 蟻人與黃蜂女 / Ant-Man and the Wasp 》</p>
+        <p><b>上映日期 ：</b>2018 年 07 月 04 日</p>
+        <p><b>領銜主演 ：</b>
+          <p style="margin-left: 50px;">保羅 · 路德 / 伊凡潔琳 · 莉莉</p>
+        <p><b>內容簡介 ：</b></p>
+        <p style="margin-left: 50px;">　　故事講述<b>史考特 · 朗恩</b>與漢克·皮姆給他一個新任務，要求他跟黃蜂女合作，他嘗試在作為蟻人的責任與他的家庭生活之間作出平衡。</p>
+      </div>
+      <div class="div3">
+        <hr class="hr1">
+        <center>
+          <div class="div4">
+            <br>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/UUkn-enk2RU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="line-height: 70px;font-size: 32px">蟻人與黃蜂女 預告</p>
+          </div>
+        </center>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div id=" ◆　未來 . . ." style="display:none;margin:20 270px;font-size: 25px">
+    <p style="font-size: 25px">持續更新中...</p>
+  </div>
+  
+	<script>
+		function openLeftMenu()
+		{
+			document.getElementById("leftMenu").style.display="block";
+		}
+		function closeLeftMenu()
+		{
+			document.getElementById("leftMenu").style.display="none";
+		}
+    window.onclick=function(event)
+    {
+      if(!event.target.matches("#logo"))        
+      {
+        document.getElementById("leftMenu").style.display="none";
+      }
+    }
+    function openRightMenu()
+    {
+      document.getElementById("rightMenu").style.display="block";
+    }
+    function closeRightMenu()
+    {
+      document.getElementById("rightMenu").style.display="none";
+    }
+    function display1()
+    {
+      var h=document.getElementById(" 首頁 ");
+      var x=document.getElementById(" ◆　復仇者集結");
+      var y=document.getElementById(" ◆　新世界開啟");
+      var z=document.getElementById(" ◆　未知英雄崛起");
+      var w=document.getElementById(" ◆　未來 . . .");
+      h.style.display="none";
+      x.style.display="block";
+      y.style.display="none";
+      z.style.display="none";
+      w.style.display="none";
+    }
+    function display2()
+    {
+      var h=document.getElementById(" 首頁 ");
+      var x=document.getElementById(" ◆　復仇者集結");
+      var y=document.getElementById(" ◆　新世界開啟");
+      var z=document.getElementById(" ◆　未知英雄崛起");
+      var w=document.getElementById(" ◆　未來 . . .");
+      h.style.display="none";
+      x.style.display="none";
+      y.style.display="block";
+      z.style.display="none";
+      w.style.display="none";
+    }
+    function display3()
+    {
+      var h=document.getElementById(" 首頁 ");
+      var x=document.getElementById(" ◆　復仇者集結");
+      var y=document.getElementById(" ◆　新世界開啟");
+      var z=document.getElementById(" ◆　未知英雄崛起");
+      var w=document.getElementById(" ◆　未來 . . .");
+      h.style.display="none";
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="block";
+      w.style.display="none";
+    }
+    function display4()
+    {
+      var h=document.getElementById(" 首頁 ");
+      var x=document.getElementById(" ◆　復仇者集結");
+      var y=document.getElementById(" ◆　新世界開啟");
+      var z=document.getElementById(" ◆　未知英雄崛起");
+      var w=document.getElementById(" ◆　未來 . . .");
+      h.style.display="none";
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      w.style.display="block";
+    }
+    function Homepage()
+    {
+      var h=document.getElementById(" 首頁 ");
+      var x=document.getElementById(" ◆　復仇者集結");
+      var y=document.getElementById(" ◆　新世界開啟");
+      var z=document.getElementById(" ◆　未知英雄崛起");
+      var w=document.getElementById(" ◆　未來 . . .");
+      h.style.display="block"
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      w.style.display="none";
+    }
+    function display5()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="block";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display6()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="none";
+      y.style.display="block";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display7()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="block";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display8()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="block";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display9()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="block";
+      r.style.display="none";
+    }
+    function display10()
+    {
+      var x=document.getElementById("鋼鐵人");
+      var y=document.getElementById("無敵浩克");
+      var z=document.getElementById("鋼鐵人2");
+      var p=document.getElementById("雷神索爾");
+      var q=document.getElementById("美國隊長");
+      var r=document.getElementById("復仇者聯盟");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="block";
+    }
+    function display11()
+    {
+      var x=document.getElementById("鋼鐵人3");
+      var y=document.getElementById("雷神索爾2：黑暗世界");
+      var z=document.getElementById("美國隊長2：酷寒戰士");
+      var p=document.getElementById("星際異攻隊");
+      var q=document.getElementById("復仇者聯盟2：奧創紀元");
+      var r=document.getElementById("蟻人");
+      x.style.display="block";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display12()
+    {
+      var x=document.getElementById("鋼鐵人3");
+      var y=document.getElementById("雷神索爾2：黑暗世界");
+      var z=document.getElementById("美國隊長2：酷寒戰士");
+      var p=document.getElementById("星際異攻隊");
+      var q=document.getElementById("復仇者聯盟2：奧創紀元");
+      var r=document.getElementById("蟻人");
+      x.style.display="none";
+      y.style.display="block";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display13()
+    {
+      var x=document.getElementById("鋼鐵人3");
+      var y=document.getElementById("雷神索爾2：黑暗世界");
+      var z=document.getElementById("美國隊長2：酷寒戰士");
+      var p=document.getElementById("星際異攻隊");
+      var q=document.getElementById("復仇者聯盟2：奧創紀元");
+      var r=document.getElementById("蟻人");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="block";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display14()
+    {
+      var x=document.getElementById("鋼鐵人3");
+      var y=document.getElementById("雷神索爾2：黑暗世界");
+      var z=document.getElementById("美國隊長2：酷寒戰士");
+      var p=document.getElementById("星際異攻隊");
+      var q=document.getElementById("復仇者聯盟2：奧創紀元");
+      var r=document.getElementById("蟻人");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="block";
+      q.style.display="none";
+      r.style.display="none";
+    }
+    function display15()
+    {
+      var x=document.getElementById("鋼鐵人3");
+      var y=document.getElementById("雷神索爾2：黑暗世界");
+      var z=document.getElementById("美國隊長2：酷寒戰士");
+      var p=document.getElementById("星際異攻隊");
+      var q=document.getElementById("復仇者聯盟2：奧創紀元");
+      var r=document.getElementById("蟻人");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="block";
+      r.style.display="none";
+    }
+    function display16()
+    {
+      var x=document.getElementById("鋼鐵人3");
+      var y=document.getElementById("雷神索爾2：黑暗世界");
+      var z=document.getElementById("美國隊長2：酷寒戰士");
+      var p=document.getElementById("星際異攻隊");
+      var q=document.getElementById("復仇者聯盟2：奧創紀元");
+      var r=document.getElementById("蟻人");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="block";
+    }
+    function display17()
+    {
+      var x=document.getElementById("美國隊長3：英雄內戰");
+      var y=document.getElementById("奇異博士");
+      var z=document.getElementById("星際異攻隊2");
+      var p=document.getElementById("蜘蛛人：返校日");
+      var q=document.getElementById("雷神索爾3：諸神黃昏");
+      var r=document.getElementById("黑豹");
+      var t=document.getElementById("復仇者聯盟3：無限之戰");
+      var s=document.getElementById("蟻人與黃蜂女");
+      x.style.display="block";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+      t.style.display="none";
+      s.style.display="none";
+    }
+    function display18()
+    {
+      var x=document.getElementById("美國隊長3：英雄內戰");
+      var y=document.getElementById("奇異博士");
+      var z=document.getElementById("星際異攻隊2");
+      var p=document.getElementById("蜘蛛人：返校日");
+      var q=document.getElementById("雷神索爾3：諸神黃昏");
+      var r=document.getElementById("黑豹");
+      var t=document.getElementById("復仇者聯盟3：無限之戰");
+      var s=document.getElementById("蟻人與黃蜂女");
+      x.style.display="none";
+      y.style.display="block";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+      t.style.display="none";
+      s.style.display="none";
+    }
+    function display19()
+    {
+      var x=document.getElementById("美國隊長3：英雄內戰");
+      var y=document.getElementById("奇異博士");
+      var z=document.getElementById("星際異攻隊2");
+      var p=document.getElementById("蜘蛛人：返校日");
+      var q=document.getElementById("雷神索爾3：諸神黃昏");
+      var r=document.getElementById("黑豹");
+      var t=document.getElementById("復仇者聯盟3：無限之戰");
+      var s=document.getElementById("蟻人與黃蜂女");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="block";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+      t.style.display="none";
+      s.style.display="none";
+    }
+    function display20()
+    {
+      var x=document.getElementById("美國隊長3：英雄內戰");
+      var y=document.getElementById("奇異博士");
+      var z=document.getElementById("星際異攻隊2");
+      var p=document.getElementById("蜘蛛人：返校日");
+      var q=document.getElementById("雷神索爾3：諸神黃昏");
+      var r=document.getElementById("黑豹");
+      var t=document.getElementById("復仇者聯盟3：無限之戰");
+      var s=document.getElementById("蟻人與黃蜂女");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="block";
+      q.style.display="none";
+      r.style.display="none";
+      t.style.display="none";
+      s.style.display="none";
+    }
+    function display21()
+    {
+      var x=document.getElementById("美國隊長3：英雄內戰");
+      var y=document.getElementById("奇異博士");
+      var z=document.getElementById("星際異攻隊2");
+      var p=document.getElementById("蜘蛛人：返校日");
+      var q=document.getElementById("雷神索爾3：諸神黃昏");
+      var r=document.getElementById("黑豹");
+      var t=document.getElementById("復仇者聯盟3：無限之戰");
+      var s=document.getElementById("蟻人與黃蜂女");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="block";
+      r.style.display="none";
+      t.style.display="none";
+      s.style.display="none";
+    }
+    function display22()
+    {
+      var x=document.getElementById("美國隊長3：英雄內戰");
+      var y=document.getElementById("奇異博士");
+      var z=document.getElementById("星際異攻隊2");
+      var p=document.getElementById("蜘蛛人：返校日");
+      var q=document.getElementById("雷神索爾3：諸神黃昏");
+      var r=document.getElementById("黑豹");
+      var t=document.getElementById("復仇者聯盟3：無限之戰");
+      var s=document.getElementById("蟻人與黃蜂女");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="block";
+      t.style.display="none";
+      s.style.display="none";
+    }function display23()
+    {
+      var x=document.getElementById("美國隊長3：英雄內戰");
+      var y=document.getElementById("奇異博士");
+      var z=document.getElementById("星際異攻隊2");
+      var p=document.getElementById("蜘蛛人：返校日");
+      var q=document.getElementById("雷神索爾3：諸神黃昏");
+      var r=document.getElementById("黑豹");
+      var t=document.getElementById("復仇者聯盟3：無限之戰");
+      var s=document.getElementById("蟻人與黃蜂女");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+      t.style.display="block";
+      s.style.display="none";
+    }
+    function display24()
+    {
+      var x=document.getElementById("美國隊長3：英雄內戰");
+      var y=document.getElementById("奇異博士");
+      var z=document.getElementById("星際異攻隊2");
+      var p=document.getElementById("蜘蛛人：返校日");
+      var q=document.getElementById("雷神索爾3：諸神黃昏");
+      var r=document.getElementById("黑豹");
+      var t=document.getElementById("復仇者聯盟3：無限之戰");
+      var s=document.getElementById("蟻人與黃蜂女");
+      x.style.display="none";
+      y.style.display="none";
+      z.style.display="none";
+      p.style.display="none";
+      q.style.display="none";
+      r.style.display="none";
+      t.style.display="none";
+      s.style.display="block";
+    }
+	</script>
+</body>
+</html>
+
